@@ -1,0 +1,48 @@
+import pygame
+pygame.init()
+WIDTH=1600
+HIGHT=1000
+screen=pygame.display.set_mode((WIDTH,HIGHT))
+screen.fill((255,255,255))
+class Ball():
+    def __init__(self,initial_x,initial_y,col):
+        self.x=initial_x
+        self.y=initial_y
+        self.radus=70
+        self.color=col
+    def drawing_the_ball(self):
+        pos=(self.x,self.y)
+        screen.draw.filled_circle(pos,self.radus,self.color)
+#crating objects of the ball class
+ball=Ball(800,500,"blue")
+def draw():
+    screen.clear()
+    ball.drawing_the_ball()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pygame.display.update
+nathan=True
+while nathan:
+    for events in pygame.event.get():
+        if events.type==pygame.QUIT:
+            nathan=False
